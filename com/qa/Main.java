@@ -21,6 +21,9 @@ public class Main {
         System.out.println(firstCircle.getCenterPoint());
         System.out.println(secondCircle.getCenterPoint());
 
+        System.out.println(firstCircle.getCurrentLocation());
+        firstCircle.move(1.2, 1.9);
+        System.out.println(firstCircle.getCurrentLocation());
 
     }
 }

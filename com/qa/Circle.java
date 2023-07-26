@@ -1,6 +1,6 @@
 package com.qa;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Movable {
     private double radius;
 
     public Circle(String name, String color, double x, double y, double radius) {
@@ -25,5 +25,16 @@ public class Circle extends Shape {
                 ", area=" + getArea() +
                 ", centerpoint=" + getCenterPoint() +
                 '}';
+    }
+
+    @Override
+    public Point getCurrentLocation() {
+        return new Point(getX(), getY());
+    }
+
+    @Override
+    public void move(double x, double y) {
+        setX(getX() + x);
+        setY(getY() + y);
     }
 }
