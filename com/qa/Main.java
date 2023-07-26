@@ -11,6 +11,16 @@ public class Main {
         System.out.println(firstRectangle.getCenterPoint());
         System.out.println(secondRectangle.getCenterPoint());
 
+        //circles
+        Circle firstCircle = new Circle("Circle", "blue", 1.1, 2, 5.1);
+        Circle secondCircle = new Circle("Circley", "red", 1.1, 2, 6.8);
+        System.out.println(firstCircle);
+        System.out.println(secondCircle);
+        System.out.println(firstCircle.getArea());
+        System.out.println(secondCircle.getArea());
+        System.out.println(firstCircle.getCenterPoint());
+        System.out.println(secondCircle.getCenterPoint());
+
 
     }
 }

@@ -24,6 +24,8 @@ public class Rectangle extends Shape{
         return "Rectangle{" +
                 "height=" + height +
                 ", width=" + width +
+                ", area=" + getArea() +
+                ", centerpoint=" + getCenterPoint() +
                 '}';
     }
 
